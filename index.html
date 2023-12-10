@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/base/index.css" />
+    <link rel="stylesheet" href="assets/css/pages/styles.css" />
+    <title>Atelier Magique de Noël</title>
+
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="salle_aux_cadeaux.html">Salle aux cadeaux</a></li>
+          <li><a href="pages/detail_cadeaux.html">Détail des cadeaux</a></li>
+          <li><a href="pages/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <section id="countdown">
+        <div class="countdown-container">Mon compte à rebours</div>
+        
+      </section>
+      <!-- Page d'accueil enchantée -->
+      <section id="accueil">
+        <h2 class="title2-content">Page d'accueil enchantée</h2>
+        <div class="accueil-container" class="text-content">
+          <p>
+            Explication sur la fête de Noël accompagnée de photos scintillantes
+            des rennes du Père Noël. Si vous enregistrez et actualisez
+            maintenant, vous verrez un petit effet amusant par lequel le titre
+            reste fixe et le contenu semble défiler vers le haut et disparaître
+            en dessous. Mais nous pouvons l'améliorer davantage — actuellement,
+            une partie du contenu commence sous l'en‑tête. En effet, l'en-tête
+            positionné n'apparaît plus dans le cours du document, de sorte que
+            le reste du contenu se déplace vers le haut. Nous devons tout
+            baisser un peu ; nous pouvons le faire en fixantune marge supérieure
+            sur le premier paragraphe. Ajoutez ceci maintenant :
+          </p>
+        </div>
+      </section>
+
+      <!-- La salle aux cadeaux -->
+      <section id="salle-cadeaux">
+        <h2>La salle aux cadeaux</h2>
+        <div class="salle-cadeaux">
+          <p>
+            Salle scintillante remplie de cadeaux spécialement préparés par le
+            Père Noël.
+          </p>
+        </div>
+        <div id="filters">
+          <label for="age">Filtrer par âge :</label>
+          <select id="age">
+            <option value="0-3">0-3 ans</option>
+            <option value="4-7">4-7 ans</option>
+            <option value="8-12">8-12 ans</option>
+          </select>
+          <label for="categorie">Filtrer par catégorie :</label>
+          <select id="categorie">
+            <option value="jouets">Jouets</option>
+            <option value="livres">Livres</option>
+            <option value="peluches">Peluches</option>
+          </select>
+        </div>
+        <div class="container-cards">
+          <img src="assets/images/background/arriere-plan-boutique.svg" alt="arrière plan" />
+          <div id="card-container" class="card-container">
+            <img src="assets/images/others/jouets/lego.jpg" alt="lego" />
+            <p>Lego</p>
+            <p>Age conseillé 4-7 ans</p>
+            <p>Jouets</p>
+          </div>
+          <div id="card-container" class="card-container">
+            <img src="assets/images/others/jouets/ludo.jpg" alt="ludo" />
+            <p>Ludo</p>
+            <p>Age conseillé 8-12 ans</p>
+            <p>Jouets</p>
+          </div>
+          <div id="card-container" class="card-container">
+            <img src="assets/images/others/jouets/Barbie.jpg" alt="barbie" />
+            <p>Poupée Barbie</p>
+            <p>Age conseillé 8-12 ans</p>
+            <p>Jouets</p>
+          </div>
+          <div id="card-container" class="card-container">
+            <img
+              src="assets/images/others/livres/Harry-plotter1.jpg"
+              alt="lego"
+            />
+            <p>Harry Plotter</p>
+            <p>Age conseillé 8-12 ans</p>
+            <p>Livres</p>
+          </div>
+          <div id="card-container" class="card-container">
+            <img src="assets/images/others/livres/lego.jpg" alt="lego" />
+            <p>Lego</p>
+            <p>Age conseillé 7-8 ans</p>
+            <p>Livres</p>
+          </div>
+          <div id="card-container" class="card-container">
+            <img src="assets/images/others/livres/lego.jpg" alt="lego" />
+            <p>Lego</p>
+            <p>Age conseillé 7-8 ans</p>
+            <p>Jouets</p>
+          </div>
+          <div id="card-container" class="card-container">
+            <img src="assets/images/others/jouets/lego.jpg" alt="lego" />
+            <p>Lego</p>
+            <p>Age conseillé 12-18 ans</p>
+            <p>Jouets</p>
+          </div>
+          <div id="card-container" class="card-container">
+            <img src="assets/images/others/jouets/lego.jpg" alt="lego" />
+            <p>Lego</p>
+            <p>Age conseillé 12-18 ans</p>
+            <p>Jouets</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+    <footer class="footer-container">
+      <p>&copy; 2023 Atelier Magique de Noël. Tous droits réservés.</p>
+    </footer>
+  </body>
+</html>
