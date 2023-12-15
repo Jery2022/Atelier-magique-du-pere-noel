@@ -5,59 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/base/index.css" />
     <link rel="stylesheet" href="assets/css/pages/styles.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
     <title>Atelier Magique de Noël</title>
   </head>
   <body>
     <header class="container-fluid">
-      <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary p-2" style="background-color: #6ac78c">
-            <a class="navbar-brand" href="#">
-              <img
-              src="/assets/images/logo/LOGO-OSO-AGENCE-v3.png"
-            alt="logo" width="50" height="50">
-            Atelier Magique du père Noël
-            </a>
-            <button class="navbar-toggler"      type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+      <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary p-2">
+        <a class="navbar-brand" href="#">
+          <img
+            src="/assets/images/logo/LOGO-OSO-AGENCE-v3.png"
+            alt="logo"
+            width="50"
+            height="50"
+          />
+          Atelier Magique du père Noël
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse d-flex justify-content-lg-around"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav">
+            <a
+              class="btn btn-outline-success nav-link active"
+              aria-current="page"
+              href="/pages/accueil.html"
+              >Accueil</a
+            >
+            <a
+              class="btn btn-outline-success nav-link"
+              href="/pages/a_propos.html"
+              >A propos</a
+            >
+            <a
+              class="btn btn-outline-success nav-link"
+              href="/pages/contact.html"
+              >Contact</a
+            >
+          </div>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Rechercher
             </button>
-            <div class="collapse navbar-collapse d-flex justify-content-lg-around" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="/pages/accueil.html">Accueil</a>
-                <a class="nav-link" href="/pages/a_propos.html">A propos</a>
-                <a class="nav-link" href="/pages/contact.html">Contact</a>
-              </div>
-              <form class="d-flex " role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Rechercher</button>
-              </form>
-            </div>
-        <forme class="login btn btn-outline-success" data-bs-theme="dark">
-          <a href="pages/login.html">Se connecter</a>
-        </forme>
+          </form>
+
+          <form>
+            <button class="btn btn-outline-success" type="submit">
+              Rechercher
+            </button>
+          </form>
+          <forme class="My_button btn btn-outline-success">
+            <a href="pages/login.html">Se connecter</a>
+          </forme>
+        </div>
       </nav>
     </header>
 
-    <main class="main-container">
-      <section id="banner-accueil" class="banner-accueil">
-        <div class="banner-accueil-image">
-          <div class="banner-title"><h1>Atelier Magique du Père Noël</h1></div>
-          <div class="banner-messenger">
-            <p>
-              Bienvenue sur le site de l'Atelier Magique de Noël. Vous trouverez
-              ici, toutes les informations nécessaires pour préparer la fête de
-              Noël.
-            </p>
-          </div>
-      </div>
-      </div>
-    </section>
-      <section id="countdown">
-        <div class="countdown-container">Mon compte à rebours</div>
+    <main class="container-fluid p-2 bg-primary text-white text-center">
+      <section
+        id="banner-accueil"
+        class="banner-accueil banner-accueil-bg_image"
+      >
+        <h1 class="banner-title">Atelier Magique du Père Noël</h1>
+        <p class="banner-messenger">
+          Bienvenue sur le site de l'Atelier Magique de Noël. Vous trouverez
+          ici, toutes les informations nécessaires pour préparer la fête de
+          Noël.
+        </p>
       </section>
+
       <!-- Page d'accueil enchantée -->
-      <section id="accueil">
-        <h2 class="title2-content">Page d'accueil enchantée</h2>
-        <div class="text-content">
+      <section class="container-fluid p-3 my-0 bg-dark text-white">
+        <div id="countdown">
+          <p>Mon compte à rebours</p>
+        </div>
+        <div id="accueil-text-content ">
+          <h2 class="title2-content">Page d'accueil enchantée</h2>
           <p>
             Explication sur la fête de Noël accompagnée de photos scintillantes
             des rennes du Père Noël. Si vous enregistrez et actualisez
@@ -74,8 +118,8 @@
       </section>
 
       <!-- La salle aux cadeaux -->
-      <section id="salle-cadeaux-container">
-        <h2 class="title2-content">La salle aux cadeaux</h2>
+      <section class="container-fluid p-0 my-0 bg-info text-white"  >
+        <h2 class="title2-content">La salle aux cadeaux du Père Noël</h2>
         <div class="salle-cadeaux">
           <p>
             Salle scintillante remplie de cadeaux spécialement préparés par le
@@ -98,93 +142,132 @@
             <option value="electronic">Electronique</option>
           </select>
         </div>
-        <div class="cadeaux-container">
-          <div id="cadeau-card">
-            <div id="cadeau-image" class="cadeau-image">
-              <img src="assets/images/others/jouets/lego.jpg" alt="lego" />
-            </div>
-            <div id="cadeau-description" class="cadeau-description">
-              <p>Description</p>
-            </div>
-            <div id="cadeau-name" class="cadeau-name">
-              <p>Lego</p>
-            </div>
-            <div id="cadeau-rating" class="cadeau-rating">
-              <p>Rating</p>
-            </div>
-            <div id="cadeau-rating" class="cadeau-rating">
-              <p>Age conseillé 4-7 ans</p>
-            </div>
-          </div>
-          <div id="cadeau-card">
-            <div id="cadeau-image" class="cadeau-image">
-              <div>
-                <img
-                  src="assets/images/others/jouets/barbie.jpg"
-                  alt="barbie"
-                />
+        <div class="container-cards">
+          <div class="card container-card">
+            <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-name-product">John Doe</h4>
+              <p class="card-tittle-description">Description</p>
+              <div class="card-container-description">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab aspernatur enim debitis velit aut, ipsa ratione repellendus odio quod tempora quae facere quaerat asperiores itaque ex nemo earum saepe modi?</p>
               </div>
-              <div id="cadeau-description" class="cadeau-description">
-                <p>Description</p>
+              <div class="card-product-rating">
+                <p >Avis du public : </p><p style="color:gold ">* * * *</p>
               </div>
-              <div id="cadeau-name" class="cadeau-name">
-                <p>Poupée Barbie</p>
+              <div id="card-propose-age" class="card-propose-age">
+                <p>Age conseillé : 4-7 ans</p>
               </div>
-              <div id="cadeau-rating" class="cadeau-rating">
-                <p>Rating</p>
-              </div>
-              <div id="cadeau-rating" class="cadeau-rating">
-                <p>Age conseillé 4-7 ans</p>
+              <div class="card-buttun-details">
+                <a href="#" class="btn btn-outline-success">Voir le détails</a>
               </div>
             </div>
           </div>
-          <div class="cadeau-card">
-            <div id="cadeau-image" class="cadeau-image">
-              <img
-                src="assets/images/others/jouets/voiture-electrique.jpg"
-                alt="voiture électrique"
-              />
-            </div>
-            <div id="cadeau-description" class="cadeau-description">
-              <p>Description</p>
-            </div>
-            <div id="cadeau-name" class="cadeau-name">
-              <p>Voiture électrique</p>
-            </div>
-            <div id="cadeau-rating" class="cadeau-rating">
-              <p>Rating</p>
-            </div>
-            <div id="cadeau-age" class="cadeau-age">
-              <p>Age conseillé 8-12 ans</p>
+          <div class="card container-card">
+            <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-name-product">John Doe</h4>
+              <p class="card-tittle-description">Description</p>
+              <div class="card-container-description">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab aspernatur enim debitis velit aut, ipsa ratione repellendus odio quod tempora quae facere quaerat asperiores itaque ex nemo earum saepe modi?</p>
+              </div>
+              <div class="card-product-rating">
+                <p >Avis du public : </p><p style="color:gold ">* * * *</p>
+              </div>
+              <div id="card-propose-age" class="card-propose-age">
+                <p>Age conseillé : 4-7 ans</p>
+              </div>
+              <div class="card-buttun-details">
+                <a href="#" class="btn btn-outline-success">Voir le détails</a>
+              </div>
             </div>
           </div>
-          <div class="cadeau-card">
-            <div id="cadeau-image" class="cadeau-image">
-              <img
-                src="assets/images/others/jouets/harry-plotter.jpg"
-                alt="harry plotters"
-              />
+          <div class="card container-card">
+            <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-name-product">John Doe</h4>
+              <p class="card-tittle-description">Description</p>
+              <div class="card-container-description">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab aspernatur enim debitis velit aut, ipsa ratione repellendus odio quod tempora quae facere quaerat asperiores itaque ex nemo earum saepe modi?</p>
+              </div>
+              <div class="card-product-rating">
+                <p >Avis du public : </p><p style="color:gold ">* * * *</p>
+              </div>
+              <div id="card-propose-age" class="card-propose-age">
+                <p>Age conseillé : 4-7 ans</p>
+              </div>
+              <div class="card-buttun-details">
+                <a href="#" class="btn btn-outline-success">Voir le détails</a>
+              </div>
             </div>
-            <div id="cadeau-description" class="cadeau-description">
-              <p>Description</p>
+          </div>
+          <div class="card container-card">
+            <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-name-product">John Doe</h4>
+              <p class="card-tittle-description">Description</p>
+              <div class="card-container-description">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab aspernatur enim debitis velit aut, ipsa ratione repellendus odio quod tempora quae facere quaerat asperiores itaque ex nemo earum saepe modi?</p>
+              </div>
+              <div class="card-product-rating">
+                <p >Avis du public : </p><p style="color:gold ">* * * *</p>
+              </div>
+              <div id="card-propose-age" class="card-propose-age">
+                <p>Age conseillé : 4-7 ans</p>
+              </div>
+              <div class="card-buttun-details">
+                <a href="#" class="btn btn-outline-success">Voir le détails</a>
+              </div>
             </div>
-            <div id="cadeau-name" class="cadeau-name">
-              <p>Harry Plotter</p>
+          </div>
+          <div class="card container-card">
+            <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-name-product">John Doe</h4>
+              <p class="card-tittle-description">Description</p>
+              <div class="card-container-description">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab aspernatur enim debitis velit aut, ipsa ratione repellendus odio quod tempora quae facere quaerat asperiores itaque ex nemo earum saepe modi?</p>
+              </div>
+              <div class="card-product-rating">
+                <p >Avis du public : </p><p style="color:gold ">* * * *</p>
+              </div>
+              <div id="card-propose-age" class="card-propose-age">
+                <p>Age conseillé : 4-7 ans</p>
+              </div>
+              <div class="card-buttun-details">
+                <a href="#" class="btn btn-outline-success">Voir le détails</a>
+              </div>
             </div>
-            <div id="cadeau-rating" class="cadeau-rating">
-              <p>Rating</p>
-            </div>
-            <div id="cadeau-age" class="cadeau-age">
-              <p>Age conseillé 8-12 ans</p>
+          </div>
+          <div class="card container-card">
+            <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-name-product">John Doe</h4>
+              <p class="card-tittle-description">Description</p>
+              <div class="card-container-description">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab aspernatur enim debitis velit aut, ipsa ratione repellendus odio quod tempora quae facere quaerat asperiores itaque ex nemo earum saepe modi?</p>
+              </div>
+              <div class="card-product-rating">
+                <p >Avis du public : </p><p style="color:gold ">* * * *</p>
+              </div>
+              <div id="card-propose-age" class="card-propose-age">
+                <p>Age conseillé : 4-7 ans</p>
+              </div>
+              <div class="card-buttun-details">
+                <a href="#" class="btn btn-outline-success">Voir le détails</a>
+              </div>
             </div>
           </div>
         </div>
       </section>
     </main>
     <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <footer class="footer-container">
-      <p>&copy; 2023 Atelier Magique de Noël. Tous droits réservés.</p>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <footer class="container-fluid p-5 my-0 bg-dark text-white"">
+      <p>&copy; 2023 Atelier Magique du Père Noël. Tous droits réservés.</p>
     </footer>
   </body>
 </html>
