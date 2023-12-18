@@ -14,75 +14,51 @@
     <title>Atelier Magique de Noël</title>
   </head>
   <body>
-    <header class="container-fluid">
-      <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary p-2">
-        <a class="navbar-brand" href="#">
+    <header class="container-fluid  fixed-top  flex-column ">
+      <nav class="navbar  navbar-expand-lg bg-body-tertiary ">
+        <a class="navbar-brand p-2" href="#">
           <img
             src="/assets/images/logo/LOGO-OSO-AGENCE-v3.png"
             alt="logo"
-            width="50"
-            height="50"
+            width="80"
+            height="80"
           />
           Atelier Magique du père Noël
         </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div
-          class="collapse navbar-collapse d-flex justify-content-lg-around"
-          id="navbarNavAltMarkup"
-        >
-          <div class="navbar-nav">
-            <a
-              class="btn btn-outline-success nav-link active"
-              aria-current="page"
-              href="/pages/accueil.html"
-              >Accueil</a
-            >
-            <a
-              class="btn btn-outline-success nav-link"
-              href="/pages/a_propos.html"
-              >A propos</a
-            >
-            <a
-              class="btn btn-outline-success nav-link"
-              href="/pages/contact.html"
-              >Contact</a
-            >
+          
+        <div class="collapse navbar-collapse justify-content-end pe-5" 
+        id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="active btn btn-outline-success me-5" aria-current="page" href="/pages/accueil.html">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class=" btn btn-outline-success me-5 " href="/pages/a_propos.html">A propos</a>
+            </li>
+             <li class="nav-item">
+              <a class=" btn btn-outline-success  me-5" href="/pages/contact.html">Contact</a>
+            </li>
+          </ul>
+          <div class="justify-content-evenly">
+            <a class="btn btn-outline-success " href="/pages/connexion.html">Se connecter</a>
           </div>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Rechercher
-            </button>
-          </form>
-
-          <form>
-            <button class="btn btn-outline-success" type="submit">
-              Rechercher
-            </button>
-          </form>
-          <forme class="My_button btn btn-outline-success">
-            <a href="pages/login.html">Se connecter</a>
-          </forme>
         </div>
       </nav>
+      <div class="container-fluid bg-secondary-subtle p-3" >
+         
+      </div>
+      <div class="container-fluid bg-secondary-subtle p-3" >
+        <form class="d-flex" role="search">
+          <input class="form-control m-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Rechercher</button>
+        </form>
+      </div>
     </header>
 
-    <main class="container-fluid p-2 bg-primary text-white text-center">
+    <main class="container-fluid text-white text-center">
       <section
         id="banner-accueil"
         class="banner-accueil banner-accueil-bg_image"
@@ -118,7 +94,7 @@
       </section>
 
       <!-- La salle aux cadeaux -->
-      <section class="container-fluid p-0 my-0 bg-info text-white"  >
+      <section class="container-fluid p-0 my-0  text-white"  >
         <h2 class="title2-content">La salle aux cadeaux du Père Noël</h2>
         <div class="salle-cadeaux">
           <p>
@@ -126,8 +102,8 @@
             Père Noël.
           </p>
         </div>
-        <div id="filters" class="filters-container">
-          <label for="age">Filtrer par âge :</label>
+        <div id="filters" class="filters-container bg-primary text-uppercase ">
+          <label for="age" >Filtrer par âge :</label>
           <select id="age">
             <option value="0-3">0-3 ans</option>
             <option value="4-7">4-7 ans</option>
