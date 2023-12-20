@@ -1,0 +1,52 @@
+<div class="container">
+  <div style="text-align: center">
+    <h2>Je fais ma demande au Père Noël</h2>
+    <p>Swing by for a cup of coffee, or leave us a message:</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img
+        src="/assets/images/background/arriere-plan-lettre.svg"
+        style="width: 100%"
+      />
+    </div>
+    <div class="column">
+      <form action="/action_contact.php">
+        <label for="fname">Prénom</label>
+        <input
+          type="text"
+          id="fname"
+          name="firstname"
+          placeholder="Your name.."
+        />
+        <label for="lname">Nom</label>
+        <input
+          type="text"
+          id="lname"
+          name="lastname"
+          placeholder="Your last name.."
+        />
+        <label for="country">Ville</label>
+        <select id="country" name="country">
+          <option value="libreville">Libreville</option>
+          <option value="franceville">Franceville</option>
+          <option value="lamabrene">Lambaréné</option>
+          <option value="mouila">Mouila</option>
+          <option value="tchibanga">Tchibanga</option>
+          <option value="koulamoutou">Koulamoutou</option>
+          <option value="makokou">Makokou</option>
+          <option value="tchibanga">Port-Gentil</option>
+          <option value="koulamoutou">Oyem</option>
+        </select>
+        <label for="subject">Objet</label>
+        <textarea
+          id="subject"
+          name="subject"
+          placeholder="Write something.."
+          style="height: 170px"
+        ></textarea>
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </div>
+</div>
